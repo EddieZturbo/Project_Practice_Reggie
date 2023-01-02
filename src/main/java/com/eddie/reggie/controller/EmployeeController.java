@@ -1,16 +1,16 @@
 package com.eddie.reggie.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.eddie.reggie.common.R;
 import com.eddie.reggie.entity.Employee;
 import com.eddie.reggie.service.EmployeeService;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.DigestUtils;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
 import javax.servlet.http.HttpServletRequest;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -90,6 +90,28 @@ public class EmployeeController {
         //将员工储存到数据库中
         employeeService.save(employee);
         return R.success("添加员工成功");
+    }
+
+
+    /**
+     * 员工信息分页查询
+     * @param page
+     * @param pageSize
+     * @param name
+     * @return
+     */
+    @GetMapping("/page")
+    public R<Page> page(int page,int pageSize,String name){
+        log.info("page = {},pageSize = {},name = {}",page,pageSize,name);
+        //构造page
+        Page pageInfo = new Page(page,pageSize);
+        //构造查询条件wrapper
+        LambdaQueryWrapper<Employee> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.like(StringUtils.isNotEmpty(name),Employee::getName,name);//like语句 同时判断是否为null 若为null则不进行like查询 StringUtils.isNotEmpty()--org.apache.commons.lang包下
+        queryWrapper.orderByDesc(Employee::getUpdateTime);//根据修改时间进行降序排序
+        //执行查询 page方法需要page 和 wrapper
+        employeeService.page(pageInfo,queryWrapper);
+        return R.success(pageInfo);
     }
 
 }
