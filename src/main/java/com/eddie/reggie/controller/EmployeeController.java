@@ -80,6 +80,9 @@ public class EmployeeController {
     public R<String> addEmployee(@RequestBody Employee employee, HttpServletRequest request) {
         //设置系统默认的密码（md5加密）
         employee.setPassword(DigestUtils.md5DigestAsHex("123456".getBytes()));
+
+        //公共字段填充 在MyMetaObjectHandler中统一进行
+        /*
         //设置用户创建时间和最后更新时间
         employee.setCreateTime(LocalDateTime.now());
         employee.setUpdateTime(LocalDateTime.now());
@@ -87,6 +90,9 @@ public class EmployeeController {
         Long empId = (Long) request.getSession().getAttribute("employee");
         employee.setCreateUser(empId);
         employee.setUpdateUser(empId);
+        */
+
+
         //将员工储存到数据库中
         employeeService.save(employee);
         return R.success("添加员工成功");
@@ -122,9 +128,13 @@ public class EmployeeController {
      */
     @PutMapping
     public R<String> updateUser(HttpServletRequest request, @RequestBody Employee employee) {
+        //公共字段填充 在MyMetaObjectHandler中统一进行
+        /*
         Long empId = (Long) request.getSession().getAttribute("employee");//从session中获取登录的员工id
         employee.setUpdateUser(empId);//设置最近一次更改的员工的id
         employee.setUpdateTime(LocalDateTime.now());//设置最近一次更改的时间
+         */
+
         //在数据库中进行update操作
         employeeService.updateById(employee);
         return R.success("员工信息更新成功");
