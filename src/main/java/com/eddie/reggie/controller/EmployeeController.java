@@ -109,7 +109,7 @@ public class EmployeeController {
         LambdaQueryWrapper<Employee> queryWrapper = new LambdaQueryWrapper<>();
         queryWrapper.like(StringUtils.isNotEmpty(name),Employee::getName,name);//like语句 同时判断是否为null 若为null则不进行like查询 StringUtils.isNotEmpty()--org.apache.commons.lang包下
         queryWrapper.orderByDesc(Employee::getUpdateTime);//根据修改时间进行降序排序
-        //执行查询 page方法需要page 和 wrapper
+        //执行查询
         employeeService.page(pageInfo,queryWrapper);
         return R.success(pageInfo);
     }
