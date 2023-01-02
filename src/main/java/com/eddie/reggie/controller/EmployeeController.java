@@ -142,7 +142,7 @@ public class EmployeeController {
         if (null != employee) {
             return R.success(employee);
         } else {
-            return R.error("未查询到id为 " + id + " 的员工");
+            return R.error("未查询到id为: " + id + " 的员工");
         }
     }
 
