@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 /**
  @author EddieZhang
@@ -66,6 +68,28 @@ public class EmployeeController {
     public R<String> logout(HttpServletRequest request){
         request.getSession().removeAttribute("employee");
         return R.success("退出成功");
+    }
+
+    /**
+     * 添加员工请求
+     * @param employee
+     * @param request
+     * @return
+     */
+    @PostMapping
+    public R<String> addEmployee(@RequestBody Employee employee,HttpServletRequest request){
+        //设置系统默认的密码（md5加密）
+        employee.setPassword(DigestUtils.md5DigestAsHex("123456".getBytes()));
+        //设置用户创建时间和最后更新时间
+        employee.setCreateTime(LocalDateTime.now());
+        employee.setUpdateTime(LocalDateTime.now());
+        //设置创建人以及更新人的ID 即登录的人的id 从session中取
+        Long empId = (Long) request.getSession().getAttribute("employee");
+        employee.setCreateUser(empId);
+        employee.setUpdateUser(empId);
+        //将员工储存到数据库中
+        employeeService.save(employee);
+        return R.success("添加员工成功");
     }
 
 }
