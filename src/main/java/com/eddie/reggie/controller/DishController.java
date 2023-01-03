@@ -115,4 +115,18 @@ public class DishController {
         return R.success("修改菜品成功");
     }
 
+    @GetMapping("/list")
+    public R<List<Dish>> list(Dish dish){
+        //构造queryWrapper
+        LambdaQueryWrapper<Dish> dishLambdaQueryWrapper = new LambdaQueryWrapper<>();
+        dishLambdaQueryWrapper.eq(Dish::getStatus,1);//查询status为1 即目前为起售状态的
+        dishLambdaQueryWrapper.like(dish.getName() != null,Dish::getName,dish.getName());//根据name进行查询
+        dishLambdaQueryWrapper.eq(dish.getCategoryId() != null,Dish::getCategoryId,dish.getCategoryId());
+        //先根据sort字段进行升序排序再根据updateTime进行降序排序
+        dishLambdaQueryWrapper.orderByAsc(Dish::getSort).orderByDesc(Dish::getUpdateTime);
+        //执行查询
+        List<Dish> dishList = dishService.list(dishLambdaQueryWrapper);
+        return R.success(dishList);
+    }
+
 }
