@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
  @author EddieZhang
@@ -13,6 +14,7 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 @Slf4j
 @MapperScan("com.eddie.reggie.mapper")
 @ServletComponentScan//TODO 开启Servlet组件扫描 用来扫描@WebFilter的filter
+@EnableTransactionManagement//TODO 开启事务管理
 public class SpringBootApplication {
     public static void main (String [] args){
         SpringApplication.run(SpringBootApplication.class,args);
