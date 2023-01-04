@@ -38,6 +38,12 @@ public class CategoryController {
         }
     }
 
+    /**
+     * 分页查询
+     * @param page
+     * @param pageSize
+     * @return
+     */
     @GetMapping("/page")
     public R<Page> page(int page, int pageSize) {
         //构造page

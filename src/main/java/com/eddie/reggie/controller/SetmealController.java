@@ -90,9 +90,84 @@ public class SetmealController {
      * @return
      */
     @DeleteMapping
-    public R<String> delete(@RequestBody List<Long> ids){
+    public R<String> delete(@RequestParam List<Long> ids) {
         setmealService.removeWithDish(ids);
         return R.success("套餐删除成功");
+    }
+
+    /**
+     * 停售套餐
+     * @param ids
+     * @return
+     */
+    @PostMapping("/status/0")
+    public R<String> statusTo0(@RequestParam List<Long> ids) {
+        //构造queryWrapper
+        LambdaQueryWrapper<Setmeal> setmealLambdaQueryWrapper = new LambdaQueryWrapper<>();
+        setmealLambdaQueryWrapper.in(ids != null, Setmeal::getId, ids);
+
+        //根据ids查询到setmeal集合 并使用stream()的形式将获取到的setmeal的status设置为0
+        List<Setmeal> setmealList = setmealService.list(setmealLambdaQueryWrapper);
+        setmealList.stream()
+                .map((item) -> {
+                    item.setStatus(0);
+                    return item;
+                })
+                .collect(Collectors.toList());
+
+        //进行数据库update操作 批量更新setmeal的status
+        setmealService.updateBatchById(setmealList);
+
+        return R.success("停售套餐成功");
+    }
+
+    /**
+     * 起售套餐
+     * @param ids
+     * @return
+     */
+    @PostMapping("/status/1")
+    public R<String> statusTo1(@RequestParam List<Long> ids) {
+        //构造queryWrapper
+        LambdaQueryWrapper<Setmeal> setmealLambdaQueryWrapper = new LambdaQueryWrapper<>();
+        setmealLambdaQueryWrapper.in(ids != null, Setmeal::getId, ids);
+
+        //根据ids查询到setmeal集合 并使用stream()的形式将获取到的setmeal的status设置为1
+        List<Setmeal> setmealList = setmealService.list(setmealLambdaQueryWrapper);
+        setmealList.stream()
+                .map((item) -> {
+                    item.setStatus(1);
+                    return item;
+                })
+                .collect(Collectors.toList());
+
+        //进行数据库update操作 批量更新setmeal的status
+        setmealService.updateBatchById(setmealList);
+
+        return R.success("起售套餐成功");
+    }
+
+    /**
+     * 根据id进行SetmealDto查询
+     * @param id
+     * @return
+     */
+    @GetMapping("/{id}")
+    public R<SetmealDto> getById(@PathVariable("id") Long id){
+        SetmealDto setmealDto = setmealService.getByIdWithSetmealDish(id);
+        return R.success(setmealDto);
+    }
+
+
+    /**
+     * 修改SetmealDto
+     * @param setmealDto
+     * @return
+     */
+    @PutMapping
+    public R<String> putSetmealDto(@RequestBody SetmealDto setmealDto){
+        setmealService.updateSetmealWishDish(setmealDto);
+        return R.success("修改套餐成功");
     }
 
 }
