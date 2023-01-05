@@ -93,7 +93,7 @@
 <!--          <div class="divContent">-->
 <!--            <div v-for="flavor in dialogFlavor.flavors" :key="flavor.id">-->
 <!--                <div class="divFlavorTitle">{{flavor.name}}</div>-->
-<!--                <span v-for="item in flavor.value"-->
+<!--                <span v-for="item in JSON.parse(flavor.value)"TODO 移动端的菜品的前端代码存在bug-->
 <!--                :key="item"-->
 <!--                @click="flavorClick(flavor,item)"-->
 <!--                :class="{spanActive:flavor.dishFlavor === item}"-->
