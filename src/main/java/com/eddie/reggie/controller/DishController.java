@@ -4,8 +4,8 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.eddie.reggie.common.R;
 import com.eddie.reggie.dto.DishDto;
-import com.eddie.reggie.entity.Category;
-import com.eddie.reggie.entity.Dish;
+import com.eddie.reggie.dto.SetmealDto;
+import com.eddie.reggie.entity.*;
 import com.eddie.reggie.service.CategoryService;
 import com.eddie.reggie.service.DishFlavorService;
 import com.eddie.reggie.service.DishService;
@@ -115,18 +115,41 @@ public class DishController {
         return R.success("修改菜品成功");
     }
 
+//    @GetMapping("/list")
+//    public R<List<Dish>> list(Dish dish){
+//        //构造queryWrapper
+//        LambdaQueryWrapper<Dish> dishLambdaQueryWrapper = new LambdaQueryWrapper<>();
+//        dishLambdaQueryWrapper.eq(Dish::getStatus,1);//查询status为1 即目前为起售状态的
+//        dishLambdaQueryWrapper.like(dish.getName() != null,Dish::getName,dish.getName());//根据name进行查询
+//        dishLambdaQueryWrapper.eq(dish.getCategoryId() != null,Dish::getCategoryId,dish.getCategoryId());
+//        //先根据sort字段进行升序排序再根据updateTime进行降序排序
+//        dishLambdaQueryWrapper.orderByAsc(Dish::getSort).orderByDesc(Dish::getUpdateTime);
+//        //执行查询
+//        List<Dish> dishList = dishService.list(dishLambdaQueryWrapper);
+//        return R.success(dishList);
+//    }
+
     @GetMapping("/list")
-    public R<List<Dish>> list(Dish dish){
-        //构造queryWrapper
+    public R<List<DishDto>> list(Dish dish){
+        //查询DishFlavor数据
+        LambdaQueryWrapper<DishFlavor> dishFlavorLambdaQueryWrapper = new LambdaQueryWrapper<>();
+        dishFlavorLambdaQueryWrapper.eq(dish.getId() != null,DishFlavor::getDishId,dish.getId());
+        List<DishFlavor> flavorList = dishFlavorService.list(dishFlavorLambdaQueryWrapper);
+
+        //查询Dish数据
         LambdaQueryWrapper<Dish> dishLambdaQueryWrapper = new LambdaQueryWrapper<>();
-        dishLambdaQueryWrapper.eq(Dish::getStatus,1);//查询status为1 即目前为起售状态的
-        dishLambdaQueryWrapper.like(dish.getName() != null,Dish::getName,dish.getName());//根据name进行查询
         dishLambdaQueryWrapper.eq(dish.getCategoryId() != null,Dish::getCategoryId,dish.getCategoryId());
-        //先根据sort字段进行升序排序再根据updateTime进行降序排序
-        dishLambdaQueryWrapper.orderByAsc(Dish::getSort).orderByDesc(Dish::getUpdateTime);
-        //执行查询
+        dishLambdaQueryWrapper.eq(Dish::getStatus,1);
         List<Dish> dishList = dishService.list(dishLambdaQueryWrapper);
-        return R.success(dishList);
+        List<DishDto> dishDtoList = dishList.stream()
+                .map((item) -> {
+                    DishDto dishDto = new DishDto();
+                    BeanUtils.copyProperties(item,dishDto);
+                    dishDto.setFlavors(flavorList);
+                    return dishDto;
+                })
+                .collect(Collectors.toList());
+        return R.success(dishDtoList);
     }
 
 }

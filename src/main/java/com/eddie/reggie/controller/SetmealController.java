@@ -6,6 +6,7 @@ import com.eddie.reggie.common.R;
 import com.eddie.reggie.dto.SetmealDto;
 import com.eddie.reggie.entity.Category;
 import com.eddie.reggie.entity.Setmeal;
+import com.eddie.reggie.entity.SetmealDish;
 import com.eddie.reggie.service.CategoryService;
 import com.eddie.reggie.service.SetmealDishService;
 import com.eddie.reggie.service.SetmealService;
@@ -153,7 +154,7 @@ public class SetmealController {
      * @return
      */
     @GetMapping("/{id}")
-    public R<SetmealDto> getById(@PathVariable("id") Long id){
+    public R<SetmealDto> getById(@PathVariable("id") Long id) {
         SetmealDto setmealDto = setmealService.getByIdWithSetmealDish(id);
         return R.success(setmealDto);
     }
@@ -165,9 +166,35 @@ public class SetmealController {
      * @return
      */
     @PutMapping
-    public R<String> putSetmealDto(@RequestBody SetmealDto setmealDto){
+    public R<String> putSetmealDto(@RequestBody SetmealDto setmealDto) {
         setmealService.updateSetmealWishDish(setmealDto);
         return R.success("修改套餐成功");
+    }
+
+
+        @GetMapping("/list")
+    public R<List<SetmealDto>> getSetmealDtoById(Setmeal setmeal) {
+        //查询setmealDish数据
+        LambdaQueryWrapper<SetmealDish> setmealDishLambdaQueryWrapper = new LambdaQueryWrapper<>();
+        setmealDishLambdaQueryWrapper.eq(setmeal.getId() != null, SetmealDish::getSetmealId, setmeal.getId());
+        List<SetmealDish> setmealDishList = setmealDishService.list(setmealDishLambdaQueryWrapper);
+
+        //查询setmeal数据
+        //构建queryWrapper
+        LambdaQueryWrapper<Setmeal> setmealLambdaQueryWrapper = new LambdaQueryWrapper<>();
+        setmealLambdaQueryWrapper.eq(setmeal.getCategoryId() != null, Setmeal::getCategoryId, setmeal.getCategoryId());
+        setmealLambdaQueryWrapper.eq(Setmeal::getStatus,1);
+        List<Setmeal> setmeals = setmealService.list(setmealLambdaQueryWrapper);
+        List<SetmealDto> setmealDtoList = setmeals.stream()
+                .map((item) -> {
+                    SetmealDto setmealDto = new SetmealDto();
+                    BeanUtils.copyProperties(item, setmealDto);
+                    setmealDto.setSetmealDishes(setmealDishList);
+                    return setmealDto;
+                })
+                .collect(Collectors.toList());
+
+        return R.success(setmealDtoList);
     }
 
 }

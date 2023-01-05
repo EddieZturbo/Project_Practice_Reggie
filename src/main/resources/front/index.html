@@ -90,16 +90,16 @@
         </div>
         <van-dialog v-model="dialogFlavor.show" :show-confirm-button="false" class="dialogFlavor" ref="flavorDialog">
           <div class="dialogTitle">{{dialogFlavor.name}}</div>
-          <div class="divContent">
-            <div v-for="flavor in dialogFlavor.flavors" :key="flavor.id">
-                <div class="divFlavorTitle">{{flavor.name}}</div>
-                <span v-for="item in JSON.parse(flavor.value)" 
-                :key="item"  
-                @click="flavorClick(flavor,item)"
-                :class="{spanActive:flavor.dishFlavor === item}"
-                >{{item}}</span>
-            </div>
-          </div>
+<!--          <div class="divContent">-->
+<!--            <div v-for="flavor in dialogFlavor.flavors" :key="flavor.id">-->
+<!--                <div class="divFlavorTitle">{{flavor.name}}</div>-->
+<!--                <span v-for="item in JSON.parse(flavor.value)"-->
+<!--                :key="item"-->
+<!--                @click="flavorClick(flavor,item)"-->
+<!--                :class="{spanActive:flavor.dishFlavor === item}"-->
+<!--                >{{item}}</span>-->
+<!--            </div>-->
+<!--          </div>-->
           <div class="divBottom">
             <div><span class="spanMoney">￥</span>{{dialogFlavor.price/100}}</div>
             <div @click="dialogFlavorAddCart">加入购物车</div>
