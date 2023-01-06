@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1f4da156-a309-477e-b7a2-9b9c6d9a72f7" name="Changes" comment="p103 移动端用户下单功能完成">
+      <change beforePath="$PROJECT_DIR$/target/Project_Practice_ReggieTakeout-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Practice_ReggieTakeout-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Project_Practice_ReggieTakeout-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Practice_ReggieTakeout-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/eddie/reggie/controller/OrdersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eddie/reggie/controller/OrdersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="ea23d58d3060ad8c1529d9aa76f4d6206df39caa" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\Maven3.6.3\apache-maven-3.6.3-bin\apache-maven-3.6.3\MyLocalRepository" />
+        <option name="mavenHome" value="E:/Maven3.6.3/apache-maven-3.6.3-bin/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="E:\Maven3.6.3\apache-maven-3.6.3-bin\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
+  <component name="ProjectId" id="2JiUXzwFjDyClFKx5TJoviYJWDv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/eddie/reggie/entity" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java18.0.0.0\IntelliJ_IDEA_21\Project_Practice_ReggieTakeout\src\main\java\com\eddie\reggie\entity" />
+      <recent name="D:\Java18.0.0.0\IntelliJ_IDEA_21\Project_Practice_ReggieTakeout\src\main\resources\front" />
+      <recent name="D:\Java18.0.0.0\IntelliJ_IDEA_21\Project_Practice_ReggieTakeout\src\main\java\com\eddie\reggie\controller" />
+      <recent name="D:\Java18.0.0.0\IntelliJ_IDEA_21\Project_Practice_ReggieTakeout\src\main\java\com\eddie\reggie\dto" />
+      <recent name="D:\Java18.0.0.0\IntelliJ_IDEA_21\Project_Practice_ReggieTakeout\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringBootApplication">
+    <configuration name="SendSms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.eddie.reggie.utils.SendSms" />
+      <module name="Project_Practice_ReggieTakeout" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.eddie.reggie.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in Project_Practice_ReggieTakeout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project_Practice_ReggieTakeout" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Project_Practice_ReggieTakeout" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.eddie.reggie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.eddie.reggie.SpringBootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.SpringBootApplication" />
+        <item itemvalue="Application.SendSms" />
+        <item itemvalue="JUnit.All in Project_Practice_ReggieTakeout" />
+        <item itemvalue="Spring Boot.SpringBootApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f4da156-a309-477e-b7a2-9b9c6d9a72f7" name="Changes" comment="" />
+      <created>1672560442786</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672560442786</updated>
+      <workItem from="1672560444494" duration="77526000" />
+      <workItem from="1672803641692" duration="52429000" />
+      <workItem from="1672974057185" duration="999000" />
+      <workItem from="1672988082000" duration="27000" />
+      <workItem from="1672988631548" duration="588000" />
+    </task>
+    <task id="LOCAL-00001" summary="p18">
+      <created>1672628921786</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672628921786</updated>
+    </task>
+    <task id="LOCAL-00002" summary="p24">
+      <created>1672632719268</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672632719268</updated>
+    </task>
+    <task id="LOCAL-00003" summary="p30">
+      <created>1672637612352</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672637612353</updated>
+    </task>
+    <task id="LOCAL-00004" summary="p30">
+      <created>1672637840613</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672637840613</updated>
+    </task>
+    <task id="LOCAL-00005" summary="p36">
+      <created>1672646178113</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672646178113</updated>
+    </task>
+    <task id="LOCAL-00006" summary="p39">
+      <created>1672647614073</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672647614073</updated>
+    </task>
+    <task id="LOCAL-00007" summary="p39之前 完成了后台管理的登录/退出以及员工管理模块">
+      <created>1672647872824</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672647872824</updated>
+    </task>
+    <task id="LOCAL-00008" summary="p43 使用ThreadLocal储存和获取session中的id">
+      <created>1672651707480</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1672651707480</updated>
+    </task>
+    <task id="LOCAL-00009" summary="p49 分类管理部分完成">
+      <created>1672665022404</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1672665022404</updated>
+    </task>
+    <task id="LOCAL-00010" summary="p53 文件上传下载Controller完成">
+      <created>1672719568302</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1672719568302</updated>
+    </task>
+    <task id="LOCAL-00011" summary="p68 菜品管理完成">
+      <created>1672733868584</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1672733868584</updated>
+    </task>
+    <task id="LOCAL-00012" summary="p79 套餐管理完成">
+      <created>1672761595804</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1672761595804</updated>
+    </task>
+    <task id="LOCAL-00013" summary="p79 套餐管理完善完成">
+      <created>1672813624343</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1672813624343</updated>
+    </task>
+    <task id="LOCAL-00014" summary="p88 阿里云发送手机短信验证码完成">
+      <created>1672826057199</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1672826057199</updated>
+    </task>
+    <task id="LOCAL-00015" summary="p94 移动端菜品展示完成">
+      <created>1672884230542</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1672884230542</updated>
+    </task>
+    <task id="LOCAL-00016" summary="p97 购物车功能实现完成">
+      <created>1672903622789</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1672903622789</updated>
+    </task>
+    <task id="LOCAL-00017" summary="p103 移动端用户下单功能完成">
+      <created>1672911400988</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1672911400988</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="p18" />
+    <MESSAGE value="p24" />
+    <MESSAGE value="p30" />
+    <MESSAGE value="p36" />
+    <MESSAGE value="p39" />
+    <MESSAGE value="p39之前 完成了后台管理的登录/退出以及员工管理模块" />
+    <MESSAGE value="p43 使用ThreadLocal储存和获取session中的id" />
+    <MESSAGE value="p49 分类管理部分完成" />
+    <MESSAGE value="p53 文件上传下载Controller完成" />
+    <MESSAGE value="p68 菜品管理完成" />
+    <MESSAGE value="p79 套餐管理完成" />
+    <MESSAGE value="p79 套餐管理完善完成" />
+    <MESSAGE value="p88 阿里云发送手机短信验证码完成" />
+    <MESSAGE value="p94 移动端菜品展示完成" />
+    <MESSAGE value="p97 购物车功能实现完成" />
+    <MESSAGE value="p103 移动端用户下单功能完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="p103 移动端用户下单功能完成" />
+  </component>
+</project>
