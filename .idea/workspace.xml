@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f4da156-a309-477e-b7a2-9b9c6d9a72f7" name="Changes" comment="修改了git.ignore配置信息">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/eddie/reggie/config/RedisConfig.class" afterDir="false" />
+    <list default="true" id="1f4da156-a309-477e-b7a2-9b9c6d9a72f7" name="Changes" comment="项目代码优化一 缓存优化 Redis-手机验证码缓存">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/config/webConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/controller/DishController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/eddie/reggie/config/webConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eddie/reggie/config/webConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Project_Practice_ReggieTakeout-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Practice_ReggieTakeout-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Project_Practice_ReggieTakeout-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Practice_ReggieTakeout-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/eddie/reggie/config/RedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eddie/reggie/config/RedisConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/eddie/reggie/controller/DishController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eddie/reggie/controller/DishController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/eddie/reggie/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eddie/reggie/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +151,7 @@
       <workItem from="1672803641692" duration="52429000" />
       <workItem from="1672974057185" duration="999000" />
       <workItem from="1672988082000" duration="27000" />
-      <workItem from="1672988631548" duration="5859000" />
+      <workItem from="1672988631548" duration="10682000" />
     </task>
     <task id="LOCAL-00001" summary="p18">
       <created>1672628921786</created>
@@ -278,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672989407775</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="项目代码优化一 缓存优化 Redis-手机验证码缓存">
+      <created>1673013052626</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1673013052626</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,6 +354,7 @@
     <MESSAGE value="p97 购物车功能实现完成" />
     <MESSAGE value="p103 移动端用户下单功能完成" />
     <MESSAGE value="修改了git.ignore配置信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改了git.ignore配置信息" />
+    <MESSAGE value="项目代码优化一 缓存优化 Redis-手机验证码缓存" />
+    <option name="LAST_COMMIT_MESSAGE" value="项目代码优化一 缓存优化 Redis-手机验证码缓存" />
   </component>
 </project>

@@ -37,7 +37,6 @@ com\eddie\reggie\mapper\ShoppingCartMapper.class
 com\eddie\reggie\service\DishService.class
 com\eddie\reggie\mapper\UserMapper.class
 com\eddie\reggie\controller\CommonController.class
-com\eddie\reggie\config\webConfig.class
 com\eddie\reggie\entity\Employee.class
 com\eddie\reggie\service\SetmealService.class
 com\eddie\reggie\service\impl\UserServiceImpl.class
@@ -48,6 +47,7 @@ com\eddie\reggie\entity\Dish.class
 com\eddie\reggie\service\DishFlavorService.class
 com\eddie\reggie\service\impl\SetmealServiceImpl.class
 com\eddie\reggie\service\SetmealDishService.class
+com\eddie\reggie\config\RedisConfig.class
 com\eddie\reggie\mapper\OrdersMapper.class
 com\eddie\reggie\common\MyMetaObjectHandler.class
 com\eddie\reggie\controller\OrdersController.class
@@ -57,6 +57,7 @@ com\eddie\reggie\service\impl\DishFlavorServiceImpl.class
 com\eddie\reggie\mapper\DishFlavorMapper.class
 com\eddie\reggie\controller\EmployeeController.class
 com\eddie\reggie\SpringBootApplication.class
+com\eddie\reggie\config\WebConfig.class
 com\eddie\reggie\service\impl\ShoppingCartServiceImpl.class
 com\eddie\reggie\service\UserService.class
 com\eddie\reggie\mapper\OrderDetailMapper.class

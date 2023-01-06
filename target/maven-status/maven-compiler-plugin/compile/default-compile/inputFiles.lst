@@ -46,8 +46,9 @@ D:\Java18.0.0.0\IntelliJ_IDEA_21\Project_Practice_ReggieTakeout\src\main\java\co
 D:\Java18.0.0.0\IntelliJ_IDEA_21\Project_Practice_ReggieTakeout\src\main\java\com\eddie\reggie\common\BaseContext.java
 D:\Java18.0.0.0\IntelliJ_IDEA_21\Project_Practice_ReggieTakeout\src\main\java\com\eddie\reggie\service\impl\SetmealDishServiceImpl.java
 D:\Java18.0.0.0\IntelliJ_IDEA_21\Project_Practice_ReggieTakeout\src\main\java\com\eddie\reggie\mapper\OrdersMapper.java
+D:\Java18.0.0.0\IntelliJ_IDEA_21\Project_Practice_ReggieTakeout\src\main\java\com\eddie\reggie\config\RedisConfig.java
 D:\Java18.0.0.0\IntelliJ_IDEA_21\Project_Practice_ReggieTakeout\src\main\java\com\eddie\reggie\entity\Orders.java
-D:\Java18.0.0.0\IntelliJ_IDEA_21\Project_Practice_ReggieTakeout\src\main\java\com\eddie\reggie\config\webConfig.java
+D:\Java18.0.0.0\IntelliJ_IDEA_21\Project_Practice_ReggieTakeout\src\main\java\com\eddie\reggie\config\WebConfig.java
 D:\Java18.0.0.0\IntelliJ_IDEA_21\Project_Practice_ReggieTakeout\src\main\java\com\eddie\reggie\mapper\DishMapper.java
 D:\Java18.0.0.0\IntelliJ_IDEA_21\Project_Practice_ReggieTakeout\src\main\java\com\eddie\reggie\entity\Setmeal.java
 D:\Java18.0.0.0\IntelliJ_IDEA_21\Project_Practice_ReggieTakeout\src\main\java\com\eddie\reggie\common\MyMetaObjectHandler.java
