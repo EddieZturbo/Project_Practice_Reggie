@@ -16,7 +16,7 @@ import java.util.List;
  */
 @Slf4j
 @Configuration
-public class webConfig extends WebMvcConfigurationSupport {
+public class WebConfig extends WebMvcConfigurationSupport {
     /**
      * //TODO:静态志愿访问路径映射
      * @param registry
