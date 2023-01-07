@@ -81,9 +81,10 @@
             <scope>runtime</scope>
         </dependency>
 
+        <!--依赖冲突 替换掉SpringBoot starter版本的-->
         <dependency>
             <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
+            <artifactId>druid</artifactId>
             <version>1.1.23</version>
         </dependency>
 
@@ -95,6 +96,13 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-cache</artifactId>
+        </dependency>
+
+        <!--TODO sharding-jdbc整合springboot框架 实现mysql 主从复制 读写分离-->
+        <dependency>
+            <groupId>org.inurl.shardingsphere</groupId>
+            <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
+            <version>4.1.0</version>
         </dependency>
 
     </dependencies>
