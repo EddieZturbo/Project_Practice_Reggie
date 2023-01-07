@@ -159,8 +159,6 @@ public class DishController {
 
         String key = "dish_" + dish.getCategoryId() + "_" + dish.getStatus();//动态定义key
 
-        //TODO (三大缓存问题)缓存穿透问题待解决
-
         //TODO 先从redis缓存中获取数据 若redis中不存在则查询数据库并将查询到的数据缓存到redis中
         dishDtoList = (List<DishDto>) redisTemplate.opsForValue().get(key);
         if (null != dishDtoList) {//若redis中存在数据则直接返回 否则查询数据库并将查询到的数据写入redis中
@@ -178,6 +176,12 @@ public class DishController {
         dishLambdaQueryWrapper.eq(dish.getCategoryId() != null, Dish::getCategoryId, dish.getCategoryId());
         dishLambdaQueryWrapper.eq(Dish::getStatus, 1);
         List<Dish> dishList = dishService.list(dishLambdaQueryWrapper);
+        //TODO (三大缓存问题之一)缓存穿透问题解决
+        //解决缓存穿透问题 方式:缓存一个空对象
+        if(null == dishList){
+            redisTemplate.opsForValue().set(key,new DishDto(),60,TimeUnit.SECONDS);//存储在redis 中一个空对象 并设置expire时间为1分钟
+            return R.success(dishDtoList);
+        }
         dishDtoList = dishList.stream()
                 .map((item) -> {
                     DishDto dishDto = new DishDto();
