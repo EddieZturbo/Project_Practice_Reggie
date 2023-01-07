@@ -8,6 +8,7 @@ import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
+ * TODO 完成了使用Shell脚本在Linux中实现自动化部署
  @author EddieZhang
  @create 2023-01-01 16:18
  */

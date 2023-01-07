@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f4da156-a309-477e-b7a2-9b9c6d9a72f7" name="Changes" comment="项目代码优化一 缓存优化 Redis-缓存菜品数据">
+    <list default="true" id="1f4da156-a309-477e-b7a2-9b9c6d9a72f7" name="Changes" comment="项目代码优化一 缓存优化 Redis-Spring Cache 缓存套餐数据">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/SpringBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/SpringBootApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/common/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/common/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/controller/DishController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/controller/SetmealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/controller/SetmealController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/eddie/reggie/config/RedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eddie/reggie/config/RedisConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/eddie/reggie/controller/DishController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eddie/reggie/controller/DishController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/eddie/reggie/controller/SetmealController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eddie/reggie/controller/SetmealController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +142,7 @@
       <workItem from="1672974057185" duration="999000" />
       <workItem from="1672988082000" duration="27000" />
       <workItem from="1672988631548" duration="11120000" />
-      <workItem from="1673058056076" duration="5334000" />
+      <workItem from="1673058056076" duration="8256000" />
     </task>
     <task id="LOCAL-00001" summary="p18">
       <created>1672628921786</created>
@@ -293,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673017873835</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="项目代码优化一 缓存优化 Redis-Spring Cache 缓存套餐数据">
+      <created>1673066988267</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1673066988267</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,6 +361,7 @@
     <MESSAGE value="修改了git.ignore配置信息" />
     <MESSAGE value="项目代码优化一 缓存优化 Redis-手机验证码缓存" />
     <MESSAGE value="项目代码优化一 缓存优化 Redis-缓存菜品数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目代码优化一 缓存优化 Redis-缓存菜品数据" />
+    <MESSAGE value="项目代码优化一 缓存优化 Redis-Spring Cache 缓存套餐数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="项目代码优化一 缓存优化 Redis-Spring Cache 缓存套餐数据" />
   </component>
 </project>
