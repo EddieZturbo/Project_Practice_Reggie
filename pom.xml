@@ -87,9 +87,14 @@
             <version>1.1.23</version>
         </dependency>
 
+        <!--TODO Spring Cache 结合 Redis 实现缓存-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
         </dependency>
 
     </dependencies>

@@ -1,11 +1,13 @@
 package com.eddie.reggie.common;
 
 import lombok.Data;
+
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
 @Data
-public class R<T> {
+public class R<T> implements Serializable {//TODO 使用Spring Cache 结合 Redis 做缓存 所有的实体类都需要implements Serializable 实现可序列化接口
 
     private Integer code; //编码：1成功，0和其它数字为失败
 

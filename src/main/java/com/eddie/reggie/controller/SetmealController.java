@@ -14,6 +14,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -41,6 +43,7 @@ public class SetmealController {
      * @return
      */
     @PostMapping
+    @CacheEvict(cacheNames = "SetmealCache",allEntries = true)//清除cacheNames = "SetmealCache"这一类缓存中的所有数据
     public R<String> save(@RequestBody SetmealDto setmealDto) {
         setmealService.saveWithDish(setmealDto);
         return R.success("新增套餐操作成功");
@@ -91,6 +94,7 @@ public class SetmealController {
      * @return
      */
     @DeleteMapping
+    @CacheEvict(cacheNames = "SetmealCache",allEntries = true)//清除cacheNames = "SetmealCache"这一类缓存中的所有数据
     public R<String> delete(@RequestParam List<Long> ids) {
         setmealService.removeWithDish(ids);
         return R.success("套餐删除成功");
@@ -166,13 +170,21 @@ public class SetmealController {
      * @return
      */
     @PutMapping
+    @CacheEvict(cacheNames = "SetmealCache",allEntries = true)//清除cacheNames = "SetmealCache"这一类缓存中的所有数据
     public R<String> putSetmealDto(@RequestBody SetmealDto setmealDto) {
         setmealService.updateSetmealWishDish(setmealDto);
         return R.success("修改套餐成功");
     }
 
 
-        @GetMapping("/list")
+    //TODO Redis结合Spring Cache 进行缓存
+    @GetMapping("/list")
+    @Cacheable(cacheNames = "SetmealCache", key = "#setmeal.categoryId + '_' + #setmeal.status", unless = "#result == null")
+    /*
+        cacheNames = "SetmealCache" 缓存的alias（类似于一类缓存）
+        ☆key = "#setmeal.categoryId + '_' + #setmeal.status" 缓存的key 类似与一类缓存中的具体一份缓存
+        unless = "#result == null" 缓存的条件
+    */
     public R<List<SetmealDto>> getSetmealDtoById(Setmeal setmeal) {
         //查询setmealDish数据
         LambdaQueryWrapper<SetmealDish> setmealDishLambdaQueryWrapper = new LambdaQueryWrapper<>();
@@ -183,7 +195,7 @@ public class SetmealController {
         //构建queryWrapper
         LambdaQueryWrapper<Setmeal> setmealLambdaQueryWrapper = new LambdaQueryWrapper<>();
         setmealLambdaQueryWrapper.eq(setmeal.getCategoryId() != null, Setmeal::getCategoryId, setmeal.getCategoryId());
-        setmealLambdaQueryWrapper.eq(Setmeal::getStatus,1);
+        setmealLambdaQueryWrapper.eq(Setmeal::getStatus, 1);
         List<Setmeal> setmeals = setmealService.list(setmealLambdaQueryWrapper);
         List<SetmealDto> setmealDtoList = setmeals.stream()
                 .map((item) -> {

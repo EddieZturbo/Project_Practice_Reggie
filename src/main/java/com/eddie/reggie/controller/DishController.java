@@ -49,10 +49,11 @@ public class DishController {
         log.info(dishDto.toString());
         dishService.saveWithFlavor(dishDto);
 
-        //TODO 当数据发生了变化就要清理redis中的缓存
+        //TODO 当数据发生了变化就要清理redis中的缓存 以保证数据一致性
         //精确清理redis缓存中某一个category下的dish_开头的所有菜品的数据
         Set keys = redisTemplate.keys("dish_" + dishDto.getCategoryId() + "_1");
         redisTemplate.delete(keys);//清除缓存中所有dish_开头的key的数据
+        log.info("数据发生了更新 清除redis中缓存的数据以保证数据一致性");
 
         return R.success("新增菜品成功");
     }
@@ -124,10 +125,11 @@ public class DishController {
         log.info(dishDto.toString());
         dishService.updateWithFlavor(dishDto);
 
-        //TODO 当数据发生了变化就要清理redis中的缓存
+        //TODO 当数据发生了变化就要清理redis中的缓存 以保证数据一致性
         //精确清理redis缓存中某一个category下的dish_开头的所有菜品的数据
         Set keys = redisTemplate.keys("dish_" + dishDto.getCategoryId() + "_1");
         redisTemplate.delete(keys);//清除缓存中所有dish_开头的key的数据
+        log.info("数据发生了更新 清除redis中缓存的数据以保证数据一致性");
 
         return R.success("修改菜品成功");
     }
@@ -156,6 +158,8 @@ public class DishController {
         List<DishDto> dishDtoList = null;//要返回的对象
 
         String key = "dish_" + dish.getCategoryId() + "_" + dish.getStatus();//动态定义key
+
+        //TODO (三大缓存问题)缓存穿透问题待解决
 
         //TODO 先从redis缓存中获取数据 若redis中不存在则查询数据库并将查询到的数据缓存到redis中
         dishDtoList = (List<DishDto>) redisTemplate.opsForValue().get(key);
