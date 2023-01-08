@@ -10,13 +10,13 @@ spring:
   #      username: root
   #      password: root
   redis:
-    host: 192.168.199.152
+    host: 192.168.199.181
     port: 6379
     database: 0
   cache:
     redis:
       time-to-live: 1800000 #配置缓存存活时间(过期时间)
-  # 配置shardingSphere 实现MySQL主从复制
+  # TODO 配置ShardingSphere 实现MySQL主从复制
   shardingsphere:
     datasource:
       names: master,slave
@@ -24,7 +24,7 @@ spring:
       master:
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://192.168.199.152:3306/reggie?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+        url: jdbc:mysql://192.168.199.181:3306/reggie?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
         username: root
         password: root
       # 从数据源
