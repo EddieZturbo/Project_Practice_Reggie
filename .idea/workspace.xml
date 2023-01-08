@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f4da156-a309-477e-b7a2-9b9c6d9a72f7" name="Changes" comment="项目优化二 Mysql配置 主从复制配置 实现读写分离 配置ShardingSphere(sharding-jdbc)">
+    <list default="true" id="1f4da156-a309-477e-b7a2-9b9c6d9a72f7" name="Changes" comment="修改MySQL(master)和Redis服务的Linux服务器IP">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,6 +145,9 @@
       <workItem from="1672988631548" duration="11120000" />
       <workItem from="1673058056076" duration="12735000" />
       <workItem from="1673108478783" duration="2810000" />
+      <workItem from="1673141634530" duration="233000" />
+      <workItem from="1673143142670" duration="471000" />
+      <workItem from="1673160694621" duration="302000" />
     </task>
     <task id="LOCAL-00001" summary="p18">
       <created>1672628921786</created>
@@ -314,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673111203204</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="修改MySQL(master)和Redis服务的Linux服务器IP">
+      <created>1673141827241</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1673141827241</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,6 +398,7 @@
     <MESSAGE value="完成了使用Shell脚本在Linux中实现自动化部署" />
     <MESSAGE value="解决菜品数据redis缓存的缓存穿透问题（缓存一份空对象的方式）" />
     <MESSAGE value="项目优化二 Mysql配置 主从复制配置 实现读写分离 配置ShardingSphere(sharding-jdbc)" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目优化二 Mysql配置 主从复制配置 实现读写分离 配置ShardingSphere(sharding-jdbc)" />
+    <MESSAGE value="修改MySQL(master)和Redis服务的Linux服务器IP" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改MySQL(master)和Redis服务的Linux服务器IP" />
   </component>
 </project>
