@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f4da156-a309-477e-b7a2-9b9c6d9a72f7" name="Changes" comment="使用maven进行重新编译打包">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/filter/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/filter/LoginCheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/eddie/reggie/controller/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eddie/reggie/controller/EmployeeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/eddie/reggie/filter/LoginCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eddie/reggie/filter/LoginCheckFilter.class" afterDir="false" />
+    <list default="true" id="1f4da156-a309-477e-b7a2-9b9c6d9a72f7" name="Changes" comment="配置Swagger框架 knife4j 生成swaggerAPI文档的增强解决方案">
+      <change beforePath="$PROJECT_DIR$/target/Project_Practice_ReggieTakeout-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Practice_ReggieTakeout-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Project_Practice_ReggieTakeout-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Practice_ReggieTakeout-1.0-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +160,7 @@
       <workItem from="1673160694621" duration="721000" />
       <workItem from="1673175350317" duration="742000" />
       <workItem from="1673177245683" duration="8604000" />
-      <workItem from="1673187043460" duration="1015000" />
+      <workItem from="1673187043460" duration="1367000" />
     </task>
     <task id="LOCAL-00001" summary="p18">
       <created>1672628921786</created>
@@ -349,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673161223723</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="配置Swagger框架 knife4j 生成swaggerAPI文档的增强解决方案">
+      <created>1673188324840</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1673188324840</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +402,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="p18" />
     <MESSAGE value="p24" />
     <MESSAGE value="p30" />
     <MESSAGE value="p36" />
@@ -425,6 +426,7 @@
     <MESSAGE value="项目优化二 Mysql配置 主从复制配置 实现读写分离 配置ShardingSphere(sharding-jdbc)" />
     <MESSAGE value="修改MySQL(master)和Redis服务的Linux服务器IP" />
     <MESSAGE value="使用maven进行重新编译打包" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用maven进行重新编译打包" />
+    <MESSAGE value="配置Swagger框架 knife4j 生成swaggerAPI文档的增强解决方案" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置Swagger框架 knife4j 生成swaggerAPI文档的增强解决方案" />
   </component>
 </project>
