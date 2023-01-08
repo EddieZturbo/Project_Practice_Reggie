@@ -105,6 +105,14 @@
             <version>4.1.0</version>
         </dependency>
 
+
+        <!--Swagger框架 knife4j 生成swaggerAPI文档的增强解决方案-->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring-boot-starter</artifactId>
+            <version>3.0.2</version>
+        </dependency>
+
     </dependencies>
 
     <build>

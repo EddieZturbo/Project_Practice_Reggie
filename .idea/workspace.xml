@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f4da156-a309-477e-b7a2-9b9c6d9a72f7" name="Changes" comment="修改MySQL(master)和Redis服务的Linux服务器IP">
+    <list default="true" id="1f4da156-a309-477e-b7a2-9b9c6d9a72f7" name="Changes" comment="使用maven进行重新编译打包">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/filter/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/filter/LoginCheckFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/eddie/reggie/controller/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eddie/reggie/controller/EmployeeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/eddie/reggie/filter/LoginCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eddie/reggie/filter/LoginCheckFilter.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +72,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/eddie/reggie/entity" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Spring-hello" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -76,6 +81,9 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -108,7 +116,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="SpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="true" temporary="true" nameIsGenerated="true">
       <module name="Project_Practice_ReggieTakeout" />
       <extension name="coverage">
         <pattern>
@@ -117,10 +125,17 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.eddie.reggie.SpringBootApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.SendSms" />
+      <item itemvalue="JUnit.All in Project_Practice_ReggieTakeout" />
+      <item itemvalue="Spring Boot.SpringBootApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.SpringBootApplication" />
@@ -147,7 +162,10 @@
       <workItem from="1673108478783" duration="2810000" />
       <workItem from="1673141634530" duration="233000" />
       <workItem from="1673143142670" duration="471000" />
-      <workItem from="1673160694621" duration="302000" />
+      <workItem from="1673160694621" duration="721000" />
+      <workItem from="1673175350317" duration="742000" />
+      <workItem from="1673177245683" duration="8604000" />
+      <workItem from="1673187043460" duration="1015000" />
     </task>
     <task id="LOCAL-00001" summary="p18">
       <created>1672628921786</created>
@@ -324,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673141827241</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="使用maven进行重新编译打包">
+      <created>1673161223723</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1673161223723</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,6 +424,7 @@
     <MESSAGE value="解决菜品数据redis缓存的缓存穿透问题（缓存一份空对象的方式）" />
     <MESSAGE value="项目优化二 Mysql配置 主从复制配置 实现读写分离 配置ShardingSphere(sharding-jdbc)" />
     <MESSAGE value="修改MySQL(master)和Redis服务的Linux服务器IP" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改MySQL(master)和Redis服务的Linux服务器IP" />
+    <MESSAGE value="使用maven进行重新编译打包" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用maven进行重新编译打包" />
   </component>
 </project>
