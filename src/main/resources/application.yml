@@ -59,4 +59,4 @@ mybatis-plus:
     db-config:
       id-type: ASSIGN_ID
 reggie:
-  uploadFilePath: E:\reggie\image\
+  uploadFilePath: /root/java_project/reggie_takeout/reggie_image

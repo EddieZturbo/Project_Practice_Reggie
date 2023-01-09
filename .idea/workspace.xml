@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f4da156-a309-477e-b7a2-9b9c6d9a72f7" name="Changes" comment="配置Swagger框架 knife4j 生成swaggerAPI文档的增强解决方案">
+    <list default="true" id="1f4da156-a309-477e-b7a2-9b9c6d9a72f7" name="Changes" comment="使用maven进行重新编译打包">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Project_Practice_ReggieTakeout-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Practice_ReggieTakeout-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Project_Practice_ReggieTakeout-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Practice_ReggieTakeout-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +163,7 @@
       <workItem from="1673160694621" duration="721000" />
       <workItem from="1673175350317" duration="742000" />
       <workItem from="1673177245683" duration="8604000" />
-      <workItem from="1673187043460" duration="1367000" />
+      <workItem from="1673187043460" duration="2016000" />
     </task>
     <task id="LOCAL-00001" summary="p18">
       <created>1672628921786</created>
@@ -351,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673188324840</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="使用maven进行重新编译打包">
+      <created>1673188424241</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1673188424241</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,8 +435,8 @@
     <MESSAGE value="解决菜品数据redis缓存的缓存穿透问题（缓存一份空对象的方式）" />
     <MESSAGE value="项目优化二 Mysql配置 主从复制配置 实现读写分离 配置ShardingSphere(sharding-jdbc)" />
     <MESSAGE value="修改MySQL(master)和Redis服务的Linux服务器IP" />
-    <MESSAGE value="使用maven进行重新编译打包" />
     <MESSAGE value="配置Swagger框架 knife4j 生成swaggerAPI文档的增强解决方案" />
-    <option name="LAST_COMMIT_MESSAGE" value="配置Swagger框架 knife4j 生成swaggerAPI文档的增强解决方案" />
+    <MESSAGE value="使用maven进行重新编译打包" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用maven进行重新编译打包" />
   </component>
 </project>
