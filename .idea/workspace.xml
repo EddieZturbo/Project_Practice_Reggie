@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f4da156-a309-477e-b7a2-9b9c6d9a72f7" name="Changes" comment="使用maven进行重新编译打包">
+    <list default="true" id="1f4da156-a309-477e-b7a2-9b9c6d9a72f7" name="Changes" comment="修改后端项目在Linux系统中部署的uploadFilePath">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Project_Practice_ReggieTakeout-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Practice_ReggieTakeout-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Project_Practice_ReggieTakeout-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/Project_Practice_ReggieTakeout-1.0-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,6 +160,7 @@
       <workItem from="1673175350317" duration="742000" />
       <workItem from="1673177245683" duration="8604000" />
       <workItem from="1673187043460" duration="2016000" />
+      <workItem from="1673228969937" duration="1069000" />
     </task>
     <task id="LOCAL-00001" summary="p18">
       <created>1672628921786</created>
@@ -361,7 +358,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673188424241</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="修改后端项目在Linux系统中部署的uploadFilePath">
+      <created>1673229287851</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1673229287851</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,7 +416,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="p24" />
     <MESSAGE value="p30" />
     <MESSAGE value="p36" />
     <MESSAGE value="p39" />
@@ -437,6 +440,7 @@
     <MESSAGE value="修改MySQL(master)和Redis服务的Linux服务器IP" />
     <MESSAGE value="配置Swagger框架 knife4j 生成swaggerAPI文档的增强解决方案" />
     <MESSAGE value="使用maven进行重新编译打包" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用maven进行重新编译打包" />
+    <MESSAGE value="修改后端项目在Linux系统中部署的uploadFilePath" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改后端项目在Linux系统中部署的uploadFilePath" />
   </component>
 </project>
