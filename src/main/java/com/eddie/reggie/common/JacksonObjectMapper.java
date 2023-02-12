@@ -19,7 +19,7 @@ import static com.fasterxml.jackson.databind.DeserializationFeature.FAIL_ON_UNKN
 
 /**
  * //TODO 对象转换器 解决js中Long型（只精确至16位）精度损失导致id(雪花算法的long型id为19位)错误的问题
- * 对象映射器:基于jackson将Java对象转为json，或者将json转为Java对象
+ * 对象转换器:基于jackson将Java对象转为json，或者将json转为Java对象
  * 将JSON解析为Java对象的过程称为 [从JSON反序列化Java对象]
  * 从Java对象生成JSON的过程称为 [序列化Java对象到JSON]
  */

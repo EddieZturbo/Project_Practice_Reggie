@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_TEST_SOURCES" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f4da156-a309-477e-b7a2-9b9c6d9a72f7" name="Changes" comment="修改后端项目在Linux系统中部署的uploadFilePath">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/SpringBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/SpringBootApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/common/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/common/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/common/JacksonObjectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/common/JacksonObjectMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/controller/DishController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/filter/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/filter/LoginCheckFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/mapper/AddressBookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/mapper/AddressBookMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/service/impl/SetmealServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eddie/reggie/service/impl/SetmealServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/backend/page/combo/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/backend/page/combo/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/page/combo/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/page/combo/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/eddie/reggie/service/impl/SetmealServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eddie/reggie/service/impl/SetmealServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +52,13 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HierarchyBrowserManager">
+    <option name="SCOPE" value="All" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../java8jdk1.8/src.zip!/java/util/function/Function.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://E:/Maven3.6.3/apache-maven-3.6.3-bin/apache-maven-3.6.3/MyLocalRepository/org/springframework/spring-tx/5.3.5/spring-tx-5.3.5-sources.jar!/org/springframework/transaction/annotation/Transactional.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -50,7 +72,7 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
+    <option name="selectedIndex" value="2" />
   </component>
   <component name="ProjectId" id="2JiUXzwFjDyClFKx5TJoviYJWDv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -74,7 +96,9 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -160,7 +184,34 @@
       <workItem from="1673175350317" duration="742000" />
       <workItem from="1673177245683" duration="8604000" />
       <workItem from="1673187043460" duration="2016000" />
-      <workItem from="1673228969937" duration="1069000" />
+      <workItem from="1673228969937" duration="3911000" />
+      <workItem from="1673265526755" duration="136000" />
+      <workItem from="1673356989984" duration="27000" />
+      <workItem from="1673400075469" duration="2024000" />
+      <workItem from="1673412271413" duration="192000" />
+      <workItem from="1673424855759" duration="68000" />
+      <workItem from="1673446995723" duration="11659000" />
+      <workItem from="1673510541399" duration="59000" />
+      <workItem from="1673742041404" duration="1705000" />
+      <workItem from="1673770821013" duration="81000" />
+      <workItem from="1673968748969" duration="1408000" />
+      <workItem from="1674023676263" duration="13000" />
+      <workItem from="1674033432337" duration="88000" />
+      <workItem from="1674033554240" duration="10000" />
+      <workItem from="1674033956730" duration="18000" />
+      <workItem from="1674054911006" duration="806000" />
+      <workItem from="1674107092112" duration="50000" />
+      <workItem from="1674117616144" duration="46000" />
+      <workItem from="1674118529987" duration="14000" />
+      <workItem from="1674288434415" duration="113000" />
+      <workItem from="1674487263000" duration="1129000" />
+      <workItem from="1674530135113" duration="13000" />
+      <workItem from="1675046264624" duration="78000" />
+      <workItem from="1675046504449" duration="656000" />
+      <workItem from="1675048218967" duration="68000" />
+      <workItem from="1676124984762" duration="778000" />
+      <workItem from="1676180615530" duration="4718000" />
+      <workItem from="1676208868136" duration="691000" />
     </task>
     <task id="LOCAL-00001" summary="p18">
       <created>1672628921786</created>
@@ -365,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673229287851</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="修改后端项目在Linux系统中部署的uploadFilePath">
+      <created>1673230202577</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1673230202577</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,5 +500,24 @@
     <MESSAGE value="使用maven进行重新编译打包" />
     <MESSAGE value="修改后端项目在Linux系统中部署的uploadFilePath" />
     <option name="LAST_COMMIT_MESSAGE" value="修改后端项目在Linux系统中部署的uploadFilePath" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/eddie/reggie/service/impl/SetmealServiceImpl.java</url>
+          <line>85</line>
+          <properties class="com.eddie.reggie.service.impl.SetmealServiceImpl" method="getByIdWithSetmealDish">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/eddie/reggie/controller/SetmealController.java</url>
+          <line>172</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

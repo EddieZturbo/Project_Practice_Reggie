@@ -53,7 +53,7 @@ public class LoginCheckFilter implements Filter {
         }
         //判断登录状态 如果已经登录则直接放行
         if(null != request.getSession().getAttribute("employee")){
-            //TODO 在filter中将已经登录的账号的id储存至ThreadLocal中
+            //TODO 在filter中将已经登录的账号的id储存至ThreadLocal中（在MyMetaObjectHandler中用于公共字段填充时候获取使用）
             Long empId = (Long) request.getSession().getAttribute("employee");
             BaseContext.setCurrentId(empId);
 
@@ -63,7 +63,7 @@ public class LoginCheckFilter implements Filter {
 
         //判断移动端用户登录状态 如果已经登录则直接放行
         if(null != request.getSession().getAttribute("user")){
-            //TODO 在filter中将已经登录的账号的id储存至ThreadLocal中
+            //TODO 在filter中将已经登录的账号的id储存至ThreadLocal中（在MyMetaObjectHandler中用于公共字段填充时候获取使用）
             Long userId = (Long) request.getSession().getAttribute("user");
             BaseContext.setCurrentId(userId);
 

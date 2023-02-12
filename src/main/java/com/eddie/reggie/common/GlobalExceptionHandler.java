@@ -2,10 +2,7 @@ package com.eddie.reggie.common;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ControllerAdvice;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.sql.SQLIntegrityConstraintViolationException;
 
@@ -14,9 +11,8 @@ import java.sql.SQLIntegrityConstraintViolationException;
  @author EddieZhang
  @create 2023-01-02 11:52
  */
-@ControllerAdvice(annotations = {RestController.class, Controller.class})//指明要负责处理那些注解类下的controller中的异常
+@RestControllerAdvice(annotations = {RestController.class, Controller.class})//指明要负责处理哪些注解类下的controller中的异常
 @Slf4j
-@ResponseBody
 public class GlobalExceptionHandler {
 
     /**
